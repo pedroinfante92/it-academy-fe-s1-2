@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg container">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="assets/logo-bookmark.svg" alt="Bookmark Logo" style="height: 25px;">
+          <img src="assets/logo-bookmark.svg" alt="Bookmark Logo" class="h-25">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
               <a class="nav-link px-2" href="#contact">Contact</a>
             </li>
             <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-              <button type="button" class="btn btn-danger text-uppercase px-4">Login</button>
+              <a class="btn btn-danger text-uppercase px-4" href="#login">Login</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="col-lg-6 text-center decorative-shape-container">
-           <img src="assets/illustration-hero.svg" class="img-fluid position-relative" style="z-index: 1;" alt="Hero Image">
+           <img src="assets/illustration-hero.svg" class="img-fluid position-relative z-1" alt="Hero Image">
            <div class="decorative-bg d-none d-lg-block"></div>
         </div>
       </div>
@@ -79,7 +79,7 @@
       </ul>
       <div class="tab-content pt-4 mt-5">
         <div class="tab-pane fade show active" id="panel-bookmarking" role="tabpanel" aria-labelledby="tab-bookmarking">
-          <div class="row align-items-center overflow-hidden"> <div class="col-md-6 p-lg-5 text-center decorative-shape-container"> <img src="assets/illustration-features-tab-1.svg" class="img-fluid position-relative" style="z-index: 1;" alt="Feature 1 Illustration">
+          <div class="row align-items-center overflow-hidden"> <div class="col-md-6 p-lg-5 text-center decorative-shape-container"> <img src="assets/illustration-features-tab-1.svg" class="img-fluid position-relative z-1" alt="Feature 1 Illustration">
                <div class="decorative-bg features-decorative-bg d-none d-md-block"></div>
             </div>
             <div class="col-md-6 text-center text-md-start mt-4 mt-md-0 ps-md-5">
@@ -92,7 +92,7 @@
         </div>
 
         <div class="tab-pane fade" id="panel-searching" role="tabpanel" aria-labelledby="tab-searching">
-          <div class="row align-items-center overflow-hidden"> <div class="col-md-6 p-lg-5 text-center decorative-shape-container"> <img src="assets/illustration-features-tab-2.svg" class="img-fluid position-relative" style="z-index: 1;" alt="Feature 2 Illustration">
+          <div class="row align-items-center overflow-hidden"> <div class="col-md-6 p-lg-5 text-center decorative-shape-container"> <img src="assets/illustration-features-tab-2.svg" class="img-fluid position-relative z-1" alt="Feature 2 Illustration">
                <div class="decorative-bg features-decorative-bg d-none d-md-block"></div>
             </div>
             <div class="col-md-6 text-center text-md-start mt-4 mt-md-0 ps-md-5">
@@ -105,7 +105,7 @@
         </div>
 
         <div class="tab-pane fade" id="panel-sharing" role="tabpanel" aria-labelledby="tab-sharing">
-          <div class="row align-items-center overflow-hidden"> <div class="col-md-6 p-lg-5 text-center decorative-shape-container"> <img src="assets/illustration-features-tab-3.svg" class="img-fluid position-relative" style="z-index: 1;" alt="Feature 3 Illustration">
+          <div class="row align-items-center overflow-hidden"> <div class="col-md-6 p-lg-5 text-center decorative-shape-container"> <img src="assets/illustration-features-tab-3.svg" class="img-fluid position-relative z-1" alt="Feature 3 Illustration">
                <div class="decorative-bg features-decorative-bg d-none d-md-block"></div>
             </div>
             <div class="col-md-6 text-center text-md-start mt-4 mt-md-0 ps-md-5">
@@ -122,16 +122,15 @@
     <section id="pricing" class="container py-5 my-lg-5 download-section">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-6 text-center">
-          <h2 class="display-5 fw-bold mb-4">Download the extension</h2> <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+          <h2 class="display-5 fw-bold mb-4">Download the extension</h2>
+          <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
         </div>
       </div>
       <div class="row justify-content-center align-items-center align-items-lg-start pt-4">
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
           <div class="card h-100 border-0 align-items-center p-0 bg-white text-center">
-            <div class="card-header border-0 bg-transparent pt-4">
-              <img src="assets/logo-chrome.svg" class="card-img-top" alt="Chrome Logo">
-            </div>
-            <div class="card-body border-0 text-center d-flex flex-column px-4">
+            <img src="assets/logo-chrome.svg" class="card-img-top mt-4" alt="Chrome Logo">
+            <div class="card-body text-center d-flex flex-column px-4">
               <h5 class="card-title fw-bold mt-3">Add to Chrome</h5>
               <p class="card-text"><small class="text-muted">Minimum version 62</small></p>
             </div>
@@ -143,30 +142,26 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0 mt-lg-4">
           <div class="card h-100 border-0 align-items-center p-0 bg-white text-center">
-            <div class="card-header border-0 bg-transparent pt-4">
-              <img src="assets/logo-firefox.svg" class="card-img-top" alt="Firefox Logo">
-            </div>
-            <div class="card-body border-0 text-center d-flex flex-column px-4">
+            <img src="assets/logo-firefox.svg" class="card-img-top mt-4" alt="Firefox Logo">
+            <div class="card-body text-center d-flex flex-column px-4">
               <h5 class="card-title fw-bold mt-3">Add to Firefox</h5>
               <p class="card-text"><small class="text-muted">Minimum version 55</small></p>
             </div>
             <img src="assets/bg-dots.svg" alt="dots">
-             <div class="card-footer border-0 bg-transparent w-100 px-4">
+            <div class="card-footer border-0 bg-transparent w-100 px-4">
               <a href="#" class="btn btn-primary w-100">Add & Install Extension</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0 mt-lg-5">
           <div class="card h-100 border-0 align-items-center p-0 bg-white text-center">
-            <div class="card-header border-0 bg-transparent pt-4">
-               <img src="assets/logo-opera.svg" class="card-img-top" alt="Opera Logo">
-            </div>
-            <div class="card-body border-0 text-center d-flex flex-column px-4">
+            <img src="assets/logo-opera.svg" class="card-img-top mt-4" alt="Opera Logo">
+            <div class="card-body text-center d-flex flex-column px-4">
               <h5 class="card-title fw-bold mt-3">Add to Opera</h5>
               <p class="card-text"><small class="text-muted">Minimum version 46</small></p>
             </div>
             <img src="assets/bg-dots.svg" alt="dots">
-             <div class="card-footer border-0 bg-transparent w-100 px-4">
+            <div class="card-footer border-0 bg-transparent w-100 px-4">
               <a href="#" class="btn btn-primary w-100">Add & Install Extension</a>
             </div>
           </div>
@@ -241,20 +236,23 @@
     </section>
 
     <section id="contact" class="py-5 contact-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9 col-xl-8 text-center"> <p class="text-uppercase mb-4"><small>35,000+ already joined</small></p>
-                    <h2 class="h1 fw-light mb-5 mx-auto" style="max-width: 450px;">Stay up-to-date with what we're doing</h2>
-                    <form class="row g-3 justify-content-center align-items-start" id="contactForm" novalidate> <div class="col-sm-auto flex-grow-1 position-relative" style="max-width: 320px;"> <label for="emailSignup" class="visually-hidden">Email address</label>
-                            <input type="email" class="form-control form-control-lg" id="emailSignup" placeholder="Enter your email address" required>
-                        </div>
-                        <div class="col-sm-auto">
-                            <button type="submit" class="btn btn-danger btn-lg w-100 w-sm-auto">Contact Us</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-xl-8 text-center">
+            <p class="text-uppercase mb-4"><small>35,000+ already joined</small></p>
+            <h2 class="h1 fw-light mb-5 mx-auto w-75">Stay up-to-date with what we're doing</h2>
+            <form class="row g-3 justify-content-center align-items-start" id="contactForm" novalidate>
+              <div class="col-sm-auto flex-grow-1 position-relative w-100 w-sm-auto">
+                <label for="emailSignup" class="visually-hidden">Email address</label>
+                <input type="email" class="form-control form-control-lg" id="emailSignup" placeholder="Enter your email address" required>
+              </div>
+              <div class="col-sm-auto">
+                <button type="submit" class="btn btn-danger btn-lg w-100 w-sm-auto">Contact Us</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
 

@@ -7,6 +7,12 @@
   --off-white: #f7f7f7;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
@@ -125,6 +131,11 @@ p {
   z-index: 1;
 }
 
+.decorative-shape-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 .decorative-bg {
   position: absolute;
   bottom: -10%;
@@ -149,7 +160,7 @@ p {
   border-bottom-left-radius: 0;
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 992px) {
   .decorative-bg, .features-decorative-bg {
     height: 60%;
     width: 100%;
@@ -168,10 +179,13 @@ p {
   .hero-section p, .features-section p, .download-section p, .faq-section p {
     font-size: 1rem;
   }
+  .decorative-shape-container img {
+    max-width: 100%;
+  }
 }
 .features-section .nav-tabs {
   border-bottom: 1px solid #dee2e6;
-  margin-bottom: 4rem !important;
+  margin-bottom: 4rem;
 }
 
 .features-section .nav-item {
@@ -180,10 +194,10 @@ p {
   margin-right: 1rem;
 }
 
-.features-section .nav-link {
+.features-section .nav-tabs .nav-item .nav-link {
   color: var(--grayish-blue);
-  border: none !important;
-  border-bottom: 4px solid transparent !important;
+  border: none;
+  border-bottom: 4px solid transparent;
   padding: 1rem 1.5rem;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   position: relative;
@@ -191,13 +205,13 @@ p {
   white-space: nowrap;
 }
 
-.features-section .nav-link:hover {
+.features-section .nav-tabs .nav-item .nav-link:hover {
   color: var(--soft-red);
 }
 
-.features-section .nav-link.active {
-  color: var(--very-dark-blue) !important;
-  border-bottom-color: var(--soft-red) !important;
+.features-section .nav-tabs .nav-item .nav-link.active {
+  color: var(--very-dark-blue);
+  border-bottom-color: var(--soft-red);
   font-weight: 500;
 }
 
@@ -297,17 +311,14 @@ p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
 .footer a {
   color: white;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
-
 .footer a:hover {
   color: var(--soft-red);
 }
-
 .footer .nav-link {
   color: white;
   text-transform: uppercase;
@@ -315,18 +326,15 @@ p {
   font-size: 0.85rem;
   padding: 0.5rem 0;
 }
-
 .footer .social-icon {
   width: 24px;
   height: 24px;
   fill: white;
   transition: fill 0.2s ease-in-out;
 }
-
-.footer .social-link:hover .social-icon {
+.footer .social-icon:hover {
   fill: var(--soft-red);
 }
-
 .footer .social-link:hover img {
   filter: brightness(0) saturate(100%) invert(58%) sepia(57%) saturate(4718%) hue-rotate(330deg) brightness(100%) contrast(97%);
 }
